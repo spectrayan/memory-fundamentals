@@ -91,7 +91,7 @@ These terms are reserved. "Memory" is not a synonym for a row in a vector table.
 ### 4.2 Trace
 
 $$
-T = (\text{id},\; \text{tier},\; \text{payload},\; \text{header},\; \text{loc})
+T = (\text{id}, \text{tier}, \text{payload}, \text{header}, \text{loc})
 $$
 
 - **payload** — content face (text or bytes, embedding, procedural rule).
@@ -103,7 +103,7 @@ $$
 ### 4.3 Cue
 
 $$
-C = (\text{embedding},\; \text{tags},\; \text{valence-window}?,\; \text{time-window}?,\; I_{\min}?,\; \text{tier-mask},\; k,\; \text{allow-simulated},\; \text{context})
+C = (\text{embedding}, \text{tags}, \text{valence-window}?, \text{time-window}?, I_{\min}?, \text{tier-mask}, k, \text{allow-simulated}, \text{context})
 $$
 
 Arousal is not a cue dimension. High-arousal traces surface later because they have decayed less, not because the cue requested intensity. `allow_simulated` defaults to false: ordinary recall does not return hypothetical traces.
@@ -113,7 +113,7 @@ Recall is $R(C, M) \rightarrow [(T_i, s_i)]$. Order and scores are part of the a
 ### 4.4 Memory state
 
 $$
-M = (\mathcal{T},\; \mathcal{A},\; \Pi,\; \delta,\; \rho)
+M = (\mathcal{T}, \mathcal{A}, \Pi, \delta, \rho)
 $$
 
 | Component | Role |
@@ -398,7 +398,7 @@ $$
 - $I_n=I/I_{\max}$, $I \in (0,I_{\max}]$ at encode.
 - $D \in [\epsilon_D, 1]$, $\epsilon_D>0$.
 - $S \ge 1$ at encode; $E_s>0$.
-- $V=1$ if the cue has no valence window; otherwise $V=\max(\epsilon_V,\; 1-|v_T-v_C|/v_{\mathrm{range}})$.
+- $V=1$ if the cue has no valence window; otherwise $V=\max(\epsilon_V, 1-|v_T-v_C|/v_{\mathrm{range}})$.
 - $G \ge 1$ (boost-only associations; inhibition deferred).
 - Arousal does **not** appear as a query-time factor. It appears in $\Pi$ as a term that slows decline of $D$.
 
