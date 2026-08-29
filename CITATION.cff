@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: "A Memory Model of Data for Persistent Agents"
+message: "If you use this specification, please cite it as below."
+type: report
+authors:
+  - name: "Spectrayan"
+    website: "https://github.com/spectrayan"
+date-released: "2026-08-28"
+version: "1.0.0"
+license: "CC-BY-4.0"
+url: "https://github.com/spectrayan/memory-fundamentals"
+repository-code: "https://github.com/spectrayan/memory-fundamentals"
+identifiers:
+  - type: other
+    value: "MF-001"
+    description: "Memory Fundamentals Specification identifier"
+keywords:
+  - memory engine
+  - cognitive memory
+  - recall algebra
+  - memory fundamentals
+  - agent memory
+  - conformance rules
+abstract: >-
+  This report defines memory as a computational concept distinct from storage,
+  proposes a recall algebra closed over an explicit memory state, normal forms
+  for well-formed traces, and twelve conformance rules for systems that claim
+  to be memory engines. The model borrows tier physics, decay, and emotional
+  modulation from cognitive science as named failure modes; it does not assert
+  biological substrate identity.
