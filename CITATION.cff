@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: "A Memory Model of Data for Persistent Agents"
 message: "If you use this specification, please cite it as below."
-type: report
+type: standard
 authors:
   - name: "Spectrayan"
     website: "https://github.com/spectrayan"
@@ -22,9 +22,9 @@ keywords:
   - agent memory
   - conformance rules
 abstract: >-
-  This report defines memory as a computational concept distinct from storage,
-  proposes a recall algebra closed over an explicit memory state, normal forms
-  for well-formed traces, and twelve conformance rules for systems that claim
-  to be memory engines. The model borrows tier physics, decay, and emotional
-  modulation from cognitive science as named failure modes; it does not assert
-  biological substrate identity.
+  This specification defines memory as a computational concept distinct from
+  storage, proposes a recall algebra closed over an explicit memory state,
+  normal forms for well-formed traces, and twelve conformance rules for
+  systems that claim to be memory engines. The model borrows tier physics,
+  decay, and emotional modulation from cognitive science as named failure
+  modes; it does not assert biological substrate identity.
