@@ -91,7 +91,7 @@ These terms are reserved. "Memory" is not a synonym for a row in a vector table.
 ### 4.2 Trace
 
 $$
-T = (\textit{id},\; \textit{tier},\; \textit{payload},\; \textit{header},\; \textit{loc})
+T = (\text{id},\; \text{tier},\; \text{payload},\; \text{header},\; \text{loc})
 $$
 
 - **payload** — content face (text or bytes, embedding, procedural rule).
@@ -103,7 +103,7 @@ $$
 ### 4.3 Cue
 
 $$
-C = (\textit{embedding},\; \textit{tags},\; \textit{valence\_window}? ,\; \textit{time\_window}? ,\; I_{\min}?,\; \textit{tier\_mask},\; k,\; \textit{allow\_simulated},\; \textit{context})
+C = (\text{embedding},\; \text{tags},\; \text{valence-window}?,\; \text{time-window}?,\; I_{\min}?,\; \text{tier-mask},\; k,\; \text{allow-simulated},\; \text{context})
 $$
 
 Arousal is not a cue dimension. High-arousal traces surface later because they have decayed less, not because the cue requested intensity. `allow_simulated` defaults to false: ordinary recall does not return hypothetical traces.
@@ -121,7 +121,7 @@ $$
 | $\mathcal{T}$ | Available traces across tiers |
 | $\mathcal{A}$ | Hebbian, temporal, and hyperedge structure |
 | $\Pi$ | Tier physics: capacity, durability, decay *law* |
-| $\delta$ | Per-trace strength and flags: $(D, S, \textit{unresolved}, \ldots)$ |
+| $\delta$ | Per-trace strength and flags: $(D, S, \text{unresolved}, \ldots)$ |
 | $\rho$ | Rememberer (isolation boundary) |
 
 How an engine quantizes $\delta$ for a scan (buckets, epochs, lookup tables) is physical design, not part of $M$.
